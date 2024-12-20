@@ -24,7 +24,6 @@ This is a Spring Boot project designed with various features, including JWT auth
 - **Lombok**: Java library for reducing boilerplate code (e.g., getters, setters).
 - **Springdoc OpenAPI**: API documentation generation based on OpenAPI standards.
 - **Spring Boot Actuator**: Provides production-ready features such as health checks and metrics.
-- **JUnit5**: Framework for unit testing.
 
 ## Getting Started
 
