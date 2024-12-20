@@ -1,0 +1,17 @@
+package com.swiftpos.swiftposauth.repository;
+
+import com.swiftpos.swiftposauth.model.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.UUID;
+
+@Repository
+public interface IUserRepository extends JpaRepository<User, UUID> {
+    User findByUsername(String username);
+
+    Page<User> findUsersByUsernameContainingIgnoreCase(Pageable pageable, String username);
+}
